@@ -1,0 +1,33 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.2'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+}
+
+group 'com.chimerapps'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation 'net.sf.proguard:proguard-retrace:6.0.3'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+intellij {
+    version '2018.3'
+    updateSinceUntilBuild false
+}
+patchPluginXml {
+    changeNotes """
+      Initial release!<br>
+      This plugin uses the proguard retrace library to de-obfuscate traces. Currently version 6.x
+    """
+}

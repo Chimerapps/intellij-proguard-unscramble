@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>com.chimerapps.proguard-retrace</id>
+    <name>Proguard Unscramble</name>
+    <vendor email="info@chimerapps.com" url="http://www.chimerapps.com">Chimerapps</vendor>
+
+    <description>Unscrample Support for ProGuard. Use with 'Analyze Stack Trace'</description>
+
+    <idea-version since-build="141.0"/>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <unscrambleSupport implementation="com.chimerapps.proguardretrace.ProguardStackUnscramblerComponent"/>
+    </extensions>
+
+</idea-plugin>
