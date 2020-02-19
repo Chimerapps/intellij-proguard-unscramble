@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.chimerapps'
-version '1.0.0'
+version '1.0.1'
 
 repositories {
     mavenCentral()
@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation 'net.sf.proguard:proguard-retrace:6.0.3'
+    implementation 'net.sf.proguard:proguard-retrace:6.2.2'
 }
 
 compileKotlin {
@@ -27,7 +27,17 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      Initial release!<br>
-      This plugin uses the proguard retrace library to de-obfuscate traces. Currently version 6.x
+        <b>1.0.1</b>
+        <ul>
+            <li>Depend on java plugin</li>
+            <li>Updated proguard library</li>
+        <ul>
+        <b>1.0.0</b>
+        <ul> 
+            <li>
+                Initial release!<br>
+                This plugin uses the proguard retrace library to de-obfuscate traces. Currently version 6.x
+            </li>
+        </ul>
     """
 }

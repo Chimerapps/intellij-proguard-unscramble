@@ -5,8 +5,9 @@
 
     <description>Unscrample Support for ProGuard. Use with 'Analyze Stack Trace'</description>
 
-    <idea-version since-build="141.0"/>
+    <idea-version since-build="163.0"/>
     <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <unscrambleSupport implementation="com.chimerapps.proguardretrace.ProguardStackUnscramblerComponent"/>
